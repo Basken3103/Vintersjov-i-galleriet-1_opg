@@ -14,9 +14,18 @@ header {
 }
 
 .logo {
-    font-weight: bold;
-    color: green;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #222;
 }
+
+.logo .flower-icon {
+    margin-right: 10px;
+}
+
 
 nav a {
     margin: 0 10px;

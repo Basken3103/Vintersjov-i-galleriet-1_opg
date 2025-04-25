@@ -6,6 +6,21 @@ header {
     padding: 10px 20px;
 }
 
+header figure {
+    display: flex;
+    align-items: center;
+    margin-left: 136px;
+}
+
+header figure figcaption {
+    text-transform: uppercase;
+}
+
+.header nav {
+    margin-right: 136px;
+}
+
+
 nav a {
     margin: 0 10px;
     text-decoration: none;

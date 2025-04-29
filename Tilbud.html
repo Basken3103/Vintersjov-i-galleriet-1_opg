@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galleriet</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/tilbud.css" />
 </head>
 
-<body id="Tilbud">
+<body id="tilbud">
 
     <header class="header">
 
@@ -53,12 +54,29 @@
             </ul>
         </nav>
     </header>
-
-    <section class="hero">
-        <img src="img/hero (2).png">
-    </section>
-
-    <div class="container">
+    <main>
+        <section class="hero">
+            <img src="img/hero (2).png">
+        </section>
+        <div class="container">
+            <h2 class="container__h2">Mine tilbud</h2>
+            <ul id="offers" class="container__ul">
+                <li class="offer">
+                    <span>Billet til Korsbæk Bio</span>
+                    <button class="redeem-btn">Indløs</button>
+                </li>
+                <li class="offer">
+                    <span>Billet til Korsbæk Svømmehal</span>
+                    <button class="redeem-btn">Indløs</button>
+                </li>
+                <li class="offer">
+                    <span>Slik for 100 DKK i Silkytten</span>
+                    <button class="redeem-btn">Indløs</button>
+                </li>
+            </ul>
+            <button id="reset">Slet hele internettet (nulstil tilbud)</button>
+        </div>
+        <!-- <div class="container">
         <h1>Mine tilbud</h1>
         <div id="offers">
             <div class="offer">
@@ -75,12 +93,14 @@
             </div>
         </div>
         <button id="reset">Slet hele internettet (nulstil tilbud)</button>
-    </div>
+    </div> -->
 
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 
-    <img src="img/founders.png" alt="collection" width="1700px" height="600px">
-
+    </main>
+    <aside>
+        <img src="img/founders.png" alt="collection" width="1700px" height="600px">
+    </aside>
 
     <footer>
         <img src="img/footer.png" alt="praktisk info" width="1700px" height="504px">

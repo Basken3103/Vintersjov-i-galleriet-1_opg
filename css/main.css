@@ -1,0 +1,51 @@
+.hero {
+    /* background: url('../img/cinema.jpg') center/cover no-repeat; */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: black;
+}
+
+.kolonne-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.kolonne {
+    flex: 1;
+    /* background-color: black; */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.kolonne.white {
+    background-color: white;
+    color: black;
+}
+
+.kolonne.black {
+    background-color: black;
+    color: white;
+}
+
+/* tilbud */
+#tilbud main .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#tilbud main .container__h2 {
+    margin-top: 100px;
+}
+
+#tilbud main .container__ul {}
+
+#tilbud main .container__ul li {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}

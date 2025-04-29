@@ -58,30 +58,36 @@
         <img src="img/hero (3).png">
     </section>
 
-    <div class="container">
-        <h1>Mine tilbud</h1>
-        <div id="offers">
-            <div class="offer">
-                <span>Billet til Korsbæk Bio</span>
-                <button class="redeem-btn">Indløs</button>
+    <main class="main center-max flex-desktop">
+        <article class="article article-form">
+            <div class="container">
+                <h1>Kontakt Galleriet</h1>
+                <form target="_blank" action="https://formsubmit.co/vesterby@hotmail.dk" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Navn" required>
+                            </div>
+                            <div class="col">
+                                <input type="number" name="mobile" class="form-control" placeholder="Mobil" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Din besked" class="form-control" name="message" rows="2"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
+                </form>
             </div>
-            <div class="offer">
-                <span>Billet til Korsbæk Svømmehal</span>
-                <button class="redeem-btn">Indløs</button>
-            </div>
-            <div class="offer">
-                <span>Slik for 100 DKK i Silkytten</span>
-                <button class="redeem-btn">Indløs</button>
-            </div>
-        </div>
-        <button id="reset">Slet hele internettet (nulstil tilbud)</button>
-    </div>
-
-    <script src="main.js"></script>
-
-    <img src="img/founders.png" alt="collection" width="1700px" height="600px">
-
-
+        </article>
+    </main>
+    <aside class="aside">
+        <img src="img/founders.png" alt="collection" width="1700px" height="600px">
+    </aside>
     <footer>
         <img src="img/footer.png" alt="praktisk info" width="1700px" height="504px">
     </footer>

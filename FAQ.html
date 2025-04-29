@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 
-<body id="home">
+<body id="faq">
 
     <header class="header">
 
@@ -35,12 +35,15 @@
                     fill="#7BE3C4" />
             </svg>
 
+
             <figcaption>Galleriet</figcaption>
+
 
         </figure>
 
 
-        <nav class="header__nav">
+
+        <nav>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="oplevelser.html">Oplevelser</a></li>
@@ -50,49 +53,46 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <img src="img/hero.png">
-        </section>
 
-        <div class="kolonne-container">
-            <div class="kolonne white">
-                <h1>Masser af oplevelser! Spar op til 25%</h1>
+    <section class="hero">
+        <img src="img/hero (3).png">
+    </section>
 
-                <p>
-                    Et enestående tilbud! Med vores nye rabatter <br />
-                    Kan du nu spare flere penge på vores lækre tilbud <br />
-                    end nogensinde før! Hvis du f.eks. ønsker en dejlig <br />
-                    svømmetur, men ikke har råd så frygt ej, hvor det <br />
-                    Har du nu med vores billige rabatter! <br />
-                </p>
-
+    <main class="main center-max flex-desktop">
+        <article class="article article-form">
+            <div class="container">
+                <h1>Kontakt Galleriet</h1>
+                <form target="_blank" action="https://formsubmit.co/vesterby@hotmail.dk" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Navn" required>
+                            </div>
+                            <div class="col">
+                                <input type="number" name="mobile" class="form-control" placeholder="Mobil" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Din besked" class="form-control" name="message" rows="2"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
+                </form>
             </div>
-            <div class="kolonne white">
-                <h1>Sammensæt selv dit tilbud!</h1>
-
-                <p>
-                    Ud over vores fantastiske rabatter har vi også <br />
-                    en ny og spændende mulighed til dig. <br />
-                    Du kan nu selv sammensætte dine tilbud, <br />
-                    så det er skrædersyet til dine behov. <br />
-                    Se hvordan ved at gå ind på nedenstående link. <br />
-                </p>
-
-                <li><a href="">SE TILBUD</a></li>
-            </div>
-
-        </div>
-
-
+        </article>
     </main>
-    <aside>
+    <aside class="aside">
         <img src="img/founders.png" alt="collection" width="1700px" height="600px">
     </aside>
-
     <footer>
         <img src="img/footer.png" alt="praktisk info" width="1700px" height="504px">
     </footer>
+
+
 
 </body>
 

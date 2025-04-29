@@ -42,10 +42,27 @@
     margin-top: 100px;
 }
 
-#tilbud main .container__ul {}
+#tilbud main .container__ul {
+    list-style-type: none;
+    padding-left: 0;
+    /* fjerner indrykning */
+}
 
 #tilbud main .container__ul li {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin-bottom: 20px;
+}
+
+.gron-knap {
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gron-knap:hover {
+    background-color: #45a049;
 }

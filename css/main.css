@@ -103,7 +103,7 @@ h1 {
     color: #d00;
 }
 
-#foldBox {
+.panel {
     transition: height 1.5s;
 }
 

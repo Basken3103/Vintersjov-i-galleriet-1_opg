@@ -1,45 +1,71 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const offersContainer = document.getElementById("offers");
-  const resetButton = document.getElementById("reset");
-  const acc = document.querySelectorAll(".accordion");
+const accordions = document.querySelectorAll(".accordion")
 
-  offersContainer.addEventListener("click", function (event) {
-    if (event.target.classList.contains("redeem-btn")) {
-      const offer = event.target.parentElement;
-      offer.style.opacity = '0';
-      setTimeout(() => offer.remove(), 300);
-    }
-  });
+// console.log(accordions);
+accordions.forEach((accordion) => {
+  accordion.addEventListener("click", handleClick)
 
-  acc.forEach(btn => {
-    btn.addEventListener("click", function () {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
+})
 
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
+function handleClick(event) {
 
-  });
+  console.log(event.target);
 
-  resetButton.addEventListener("click", function () {
-    offersContainer.innerHTML = `
-        <div class="offer">
-          <span>Billet til Korsbæk Bio</span>
-          <button class="redeem-btn">Indløs</button>
-        </div>
-        <div class="offer">
-          <span>Billet til Korsbæk Svømmehal</span>
-          <button class="redeem-btn">Indløs</button>
-        </div>
-        <div class="offer">
-          <span>Slik for 100 DKK i Silkytten</span>
-          <button class="redeem-btn">Indløs</button>
-        </div>
-      `;
-  });
-});
+}
 
+// document.addEventListener("DOMContentLoaded", function () {
+
+// const offersContainer = document.getElementById("offers");
+// const resetButton = document.getElementById("reset");
+// const toggleBtn = document.getElementById("toggleBtn")
+// const foldBox = document.getElementById("foldBox")
+
+// console.log(toggleBtn);
+// console.log(foldBox);
+
+// toggleBtn.addEventListener("click", function () {
+//   console.log("Ja for pokker");
+
+//   if (foldBox.style.height == "0px" || foldBox.clientHeight == 0) {
+//     console.log("Den er foldet ind dude");
+//     console.log(foldBox.scrollHeight);
+
+//     foldBox.style.height = `${foldBox.scrollHeight}px`
+//   } else {
+//     foldBox.style.height = `0px`
+//   }
+// })
+
+
+// toggleBtn.addEventListener("click", function () {
+//   if (foldBox.style.height == "0px" || foldBox.clientHeight == 0) {
+//     foldBox.style.height = `${foldBox.scrollHeight}px`
+//   } else {
+//     foldBox.style.height = `0px`
+//   }
+// })
+
+// offersContainer.addEventListener("click", function (event) {
+//   if (event.target.classList.contains("redeem-btn")) {
+//     const offer = event.target.parentElement;
+//     offer.style.opacity = '0';
+//     setTimeout(() => offer.remove(), 300);
+//   }
+// });
+
+//   resetButton.addEventListener("click", function () {
+//     offersContainer.innerHTML = `
+//         <div class="offer">
+//           <span>Billet til Korsbæk Bio</span>
+//           <button class="redeem-btn">Indløs</button>
+//         </div>
+//         <div class="offer">
+//           <span>Billet til Korsbæk Svømmehal</span>
+//           <button class="redeem-btn">Indløs</button>
+//         </div>
+//         <div class="offer">
+//           <span>Slik for 100 DKK i Silkytten</span>
+//           <button class="redeem-btn">Indløs</button>
+//         </div>
+//       `;
+//   });
+// });

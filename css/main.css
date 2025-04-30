@@ -103,11 +103,15 @@ h1 {
     color: #d00;
 }
 
+#foldBox {
+    transition: height 1.5s;
+}
+
 .panel {
     background-color: #fff;
     overflow: hidden;
     padding: 0 16px;
-    display: none;
+    height: 0;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;

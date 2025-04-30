@@ -55,36 +55,46 @@
     </header>
 
     <section class="hero">
-        <img src="img/hero (3).png">
+        <img src="img/hero (4).png">
     </section>
 
-    <main class="main center-max flex-desktop">
-        <article class="article article-form">
-            <div class="container">
-                <h1>Kontakt Galleriet</h1>
-                <form target="_blank" action="https://formsubmit.co/vesterby@hotmail.dk" method="POST">
-                    <div class="form-group">
-                        <div class="form-row">
-                            <div class="col">
-                                <input type="text" name="name" class="form-control" placeholder="Navn" required>
-                            </div>
-                            <div class="col">
-                                <input type="number" name="mobile" class="form-control" placeholder="Mobil" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <input type="email" name="email" class="form-control" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Din besked" class="form-control" name="message" rows="2"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
-                </form>
+    <main>
+        <div class="faq-container">
+            <h1>Spørgsmål og svar!</h1>
+
+            <div class="faq">
+                <button class="accordion">Hvor længe gælder billetterne</button>
+                <div class="panel">
+                    <p>Billetterne gælder i 12 måneder fra udstedelsesdatoen.</p>
+                </div>
             </div>
-        </article>
+
+            <div class="faq">
+                <button class="accordion">Er billetterne personlige</button>
+                <div class="panel">
+                    <p>Nej, billetterne kan bruges af enhver med billetten i hånden.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <button class="accordion">Kan billetterne bruges i alle Korsbæks butikker</button>
+                <div class="panel">
+                    <p>Ja, medmindre andet er angivet på billetten.</p>
+                </div>
+            </div>
+
+            <div class="faq open">
+                <button class="accordion active">Refundering af billetter</button>
+                <div class="panel" style="display: block;">
+                    <p>Billetter refunderes ikke, medmindre arrangementet aflyses af arrangøren.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+
     </main>
+
     <aside class="aside">
         <img src="img/founders.png" alt="collection" width="1700px" height="600px">
     </aside>

@@ -66,3 +66,55 @@
 .gron-knap:hover {
     background-color: #45a049;
 }
+
+.faq-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: background 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.accordion::after {
+    content: '+';
+    font-size: 1.2rem;
+}
+
+.accordion.active::after {
+    content: '−';
+    color: #d00;
+}
+
+.panel {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0 16px;
+    display: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel p {
+    margin: 16px 0;
+    color: #444;
+    font-size: 0.95rem;
+}
